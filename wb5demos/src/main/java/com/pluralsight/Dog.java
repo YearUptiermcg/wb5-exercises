@@ -2,6 +2,10 @@ package com.pluralsight;
 
 public class Dog extends Animal{
 
+    public Dog(){
+        super.setSpecies("Dog");
+    }
+
     public String getBreed() {
         return breed;
     }
@@ -17,7 +21,9 @@ public class Dog extends Animal{
             System.out.println("BARK");
         }
         else{
-        System.out.println("WOOF");
+            System.out.println("WOOF");
+        }
     }
+
 
 }

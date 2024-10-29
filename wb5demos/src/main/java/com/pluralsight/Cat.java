@@ -1,10 +1,12 @@
 package com.pluralsight;
 
-import java.sql.SQLOutput;
+public class Cat extends Animal {
 
-public class Cat {
+    public Cat(){
+        super.setSpecies("Cat");
+    }
 
     public void meow(){
-        System.out.println("MEOW");
+        System.out.println("MEOW!");
     }
 }
