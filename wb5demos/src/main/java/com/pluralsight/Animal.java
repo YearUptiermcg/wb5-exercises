@@ -1,19 +1,25 @@
 package com.pluralsight;
 
 public class Animal {
+    private String name;
+    private float weight;
+    private int age;
+    private String species;
+
+    public Animal(){
+        System.out.println("TRACE -- from animal constructor");
+        this.species = "Unknown";
+        this.name = "Unknown";
+    }
     public void setSpecies(String species) {
         this.species = species;
     }
 
-    private String name;
-    private float weight;
-    private int age;
+
 
     public String getSpecies() {
         return species;
     }
-
-    private String species;
 
     public String getName() {
         return name;
