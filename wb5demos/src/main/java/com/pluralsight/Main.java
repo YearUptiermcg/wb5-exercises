@@ -1,5 +1,8 @@
 package com.pluralsight;
 
+import com.pluralsight.animals.Cat;
+import com.pluralsight.animals.Dog;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -8,7 +11,7 @@ public class Main {
         pet1.setSpecies("Goldfish");
         pet1.eat(0.25f);
 
-        Dog pet2 = new Dog();
+        Dog pet2 = new Dog("bl");
         pet2.setName("Spot");
         pet2.setBreed("Labrador");
 

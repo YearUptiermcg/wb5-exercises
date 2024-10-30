@@ -1,11 +1,22 @@
 package com.pluralsight;
-
-public class SemiTruck  extends Vehicle{
+public class SemiTruck extends Vehicle {
 
     private String cargo;
     private float cargoWeight;
     private boolean hasTrailer;
 
+
+    // Constructor for SemiTruck
+    public SemiTruck(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity, String vehicleType, boolean isGasoline, boolean isElectric, boolean isManual, float speedCurrent, float speedMax, String cargo, float cargoWeight, boolean hasTrailer) {
+        super(color, numberOfPassengers, cargoCapacity, fuelCapacity, vehicleType, isGasoline, isElectric, isManual, speedCurrent, speedMax);
+        this.cargo = cargo;
+        this.cargoWeight = cargoWeight;
+        this.hasTrailer = hasTrailer;
+    }
+
+
+
+    // Getters and setters
     public String getCargo() {
         return cargo;
     }
@@ -29,7 +40,4 @@ public class SemiTruck  extends Vehicle{
     public void setHasTrailer(boolean hasTrailer) {
         this.hasTrailer = hasTrailer;
     }
-
-
-
 }
